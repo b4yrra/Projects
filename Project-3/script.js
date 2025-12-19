@@ -4,8 +4,8 @@ const menu = document.getElementById("hiddenMenu");
 
 menuBtn.addEventListener("click", () => {
   if (menu.classList.contains("hidden")) {
-    menu.classList.remove("hidden");
+    menu.classList.toggle("hidden", false);
   } else {
-    menu.classList.add("hidden");
+    menu.classList.toggle("hidden", true);
   }
 });
