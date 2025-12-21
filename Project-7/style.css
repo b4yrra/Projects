@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  gap: 100px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.header--title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  letter-spacing: 5px;
+}
+
+.header--underline {
+  border: 2px solid #508bda;
+  width: 150px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: whitesmoke;
+  width: 650px;
+  height: 450px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container--reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#person-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.button--section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  cursor: pointer;
+  background: none;
+  border: 1px solid #49a6e9;
+  color: #49a6e9;
+  padding: 5px 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer--btn {
+  cursor: pointer;
+  margin-top: 10px;
+  background: #ebf7ff;
+  color: #49a6e9;
+  border: none;
+  padding: 5px 15px;
+}
