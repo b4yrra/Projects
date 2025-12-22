@@ -66,7 +66,7 @@ const createProfileElement = () => {
     <h4 id="author">${profile.name}</h4>
     <p id="job">${profile.job}</p>
     <p id="info">${profile.text}</p>
-    `;git add
+    `;
   container.innerHTML = profileHTML;
 };
 
