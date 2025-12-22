@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+h1 {
+  font-size: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 10px;
+  opacity: 0.8;
+}
+
+p {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1000px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.img-size {
+  width: 800px;
+  border-radius: 10px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.about-btn {
+  display: flex;
+}
+
+.cus-btn {
+  font-size: 30px;
+  padding: 20px 61px;
+  letter-spacing: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(175, 185, 194);
+  transition: all 0.6s ease;
+}
+
+.cus-btn:hover {
+  background-color: rgba(0, 255, 255, 0.246);
+}
+
+.cus-btn.selected {
+  border: 2px solid lightskyblue;
+  background-color: white;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px;
+  height: 460px;
+  border-radius: 10px;
+}
+
+.titles {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 6px;
+  font-size: 30px;
+  font-weight: bold;
+  transition: all 0.6s ease;
+}
+
+.texts {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  opacity: 0.6;
+  line-height: 30px;
+  transition: all 0.6s ease;
+}
