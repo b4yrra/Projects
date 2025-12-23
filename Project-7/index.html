@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 7</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
   </head>
   <body>
     <div class="header">
@@ -13,12 +17,18 @@
     </div>
     <div class="container">
       <div class="container--reviews" id="containerRv"></div>
-      <div class="button--section">
-        <button class="button" id="prevBtn">Prev</button>
-        <button class="button" id="nextBtn">Next</button>
-      </div>
-      <div class="footer">
-        <button class="footer--btn" id="surpBtn">Surprise Me</button>
+      <div class="buttons">
+        <div class="button--section">
+          <button class="button" id="prevBtn">
+            <i class="fa-solid fa-caret-left"></i>
+          </button>
+          <button class="button" id="nextBtn">
+            <i class="fa-solid fa-caret-right"></i>
+          </button>
+        </div>
+        <div class="footer">
+          <button class="footer--btn" id="surpBtn">Surprise Me</button>
+        </div>
       </div>
     </div>
     <script src="./script.js"></script>

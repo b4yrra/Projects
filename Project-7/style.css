@@ -40,13 +40,14 @@ body {
   height: 450px;
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 5px 5px 20px;
 }
 
 .container--reviews {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 #person-img {
@@ -65,9 +66,10 @@ body {
 .button {
   cursor: pointer;
   background: none;
-  border: 1px solid #49a6e9;
+  border: none;
   color: #49a6e9;
-  padding: 5px 10px;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
 .footer {
@@ -82,4 +84,21 @@ body {
   color: #49a6e9;
   border: none;
   padding: 5px 15px;
+}
+
+#author {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+
+#job {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+#info {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 20px;
 }
