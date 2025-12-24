@@ -45,7 +45,7 @@ const createItems = (item) => {
   return `<div class="space">
             <div class="result-value">${item.text}</div>
             <div class="icons">
-              <button class="edit-button">
+              <button class="edit-button" onclick="editItem(${item.id})">
                 <i class="fa-solid fa-pen-to-square"></i>
               </button>
               <button class="trash-button" onclick="deleteItem(${item.id})">
@@ -59,6 +59,8 @@ const deleteItem = (itemId) => {
   items = items.filter((item) => item.id !== itemId);
   renderTasks();
 };
+
+const editItem = (itemId) => {};
 
 const clearInput = () => {
   input.value = "";
