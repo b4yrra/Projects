@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.product--img {
-  display: none;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -16,8 +12,114 @@ body {
   margin-top: 100px;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+
+.border {
+  text-align: center;
+  width: 100px;
+  border: 3px solid goldenrod;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .buttonSection {
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.btn-design {
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: transparent;
+  border: 2px solid goldenrod;
+  color: goldenrod;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.btn-design:hover {
+  background-color: goldenrod;
+  color: black;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 50px;
+}
+
+.prod-flex {
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s linear;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.prod-flex:hover {
+  background-color: gainsboro;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 5px solid goldenrod;
+}
+
+.prod-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  border-bottom: 1px dotted rgb(105, 103, 103);
+  padding: 5px;
+}
+
+.prod-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  font-weight: bolder;
+}
+
+.price {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  color: goldenrod;
+}
+
+.prod-abt {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(127, 125, 125);
+  width: 400px;
 }
