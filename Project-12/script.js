@@ -56,11 +56,20 @@ const createItems = (item) => {
 };
 
 const deleteItem = (itemId) => {
-  items = items.filter((item) => item.id !== itemId);
+  items = items.filter((item) => {
+    item.id !== itemId;
+  });
   renderTasks();
 };
 
-const editItem = (itemId) => {};
+const editItem = (itemId) => {
+  items = items.forEach((item) => {
+    if (itemId === item.id) {
+      input.placeholder = `${item.text}`;
+    }
+  });
+  renderTasks();
+};
 
 const clearInput = () => {
   input.value = "";
