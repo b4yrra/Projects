@@ -14,14 +14,25 @@ const submitValue = () => {
     text: value,
   };
 
-  if (value === "") {
-    window.alert("Enter a Text");
-    return null;
-  } else {
-    items.push(item);
-  }
+  if (editId !== null) {
+    items = items.map((item) => {
+      if (item.id === editId) {
+        return {
+          id: item.id,
+          text: value,
+        };
+      } else {
+        return item;
+      }
+    });
 
-  itemId++;
+    editId = null;
+  } else {
+    items.push({
+      id: itemId++,
+      text: value,
+    });
+  }
 
   renderTasks();
   clearInput();
@@ -62,13 +73,13 @@ const deleteItem = (itemId) => {
   renderTasks();
 };
 
+let editId = null;
+
 const editItem = (itemId) => {
-  items = items.forEach((item) => {
-    if (itemId === item.id) {
-      input.placeholder = `${item.text}`;
-    }
-  });
-  renderTasks();
+  const item = items.find((item) => item.id === itemId);
+
+  input.value = item.text;
+  editId = itemId;
 };
 
 const clearInput = () => {
